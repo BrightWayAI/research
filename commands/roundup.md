@@ -10,6 +10,10 @@ This command orchestrates the news-curator subagent and a user-pick step. It's a
 
 ---
 
+## Step G — Config-root guard (run first)
+
+Run cortex's `python3 scripts/cortex_cli.py root-status`. If it exits non-zero, **stop** and show its sentence verbatim; write nothing anywhere else and do not ask for folder access more than once per session. If cortex is not installed, require that the resolved config root is an existing directory containing `memory/`; otherwise stop and point to `/start-nucleus` (in a cloud session: "Your Nucleus files are on your Mac and this chat can't see them yet. In the Claude desktop app, use + → Add folder and pick ~/cortex-root, then send any message.").
+
 ## Step 1 — Pre-flight
 
 Read `<config-root>/plugins/research.user-context.md`. If missing or unpopulated, route to `/setup-news` and stop.
