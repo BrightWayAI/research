@@ -4,6 +4,11 @@ All notable changes to news-curator are documented here.
 
 Format follows [Keep a Changelog](https://keepachangelog.com/). Versions match `plugin.json`.
 
+## [0.5.5] — Plain plugin names (2026-11-16)
+
+### Changed
+- Docs and `/roundup` use the plain plugin name Comms. No behavior change.
+
 ## [0.5.4] — news-curator tool allowlist (2026-11-16)
 
 ### Changed

@@ -1,5 +1,5 @@
 ---
-description: Run the weekly roundup scan (or any vertical roundup once configured) — scan newsletters and the web, surface candidates, let the user pick, then stage the selection for drafting. Orchestrates the news-curator subagent. Research finds; Comms Desk writes — use `--draft` (requires comms) to chain straight into drafting, or run comms's `/post` manually later. Renamed from `/ai-roundup` (2026-09-15); `/ai-roundup` remains a deprecation alias.
+description: Run the weekly roundup scan (or any vertical roundup once configured) — scan newsletters and the web, surface candidates, let the user pick, then stage the selection for drafting. Orchestrates the news-curator subagent. Research finds; Comms writes — use `--draft` (requires comms) to chain straight into drafting, or run comms's `/post` manually later. Renamed from `/ai-roundup` (2026-09-15); `/ai-roundup` remains a deprecation alias.
 ---
 
 # /roundup
@@ -84,7 +84,7 @@ For each selected item: headline, one-sentence summary, why it matters, source l
 Confirm to the user:
 > "Staged [N] candidates to `<config-root>/staged/roundup/[date].md`. Run comms's `/post` to draft the roundup in your voice — or `/roundup --draft` next time to chain straight into drafting."
 
-Research's job ends here. **Do not draft a post** — that's comms's `/post` command (which uses the `post-assembler` agent). Research finds; Comms Desk writes.
+Research's job ends here. **Do not draft a post** — that's comms's `/post` command (which uses the `post-assembler` agent). Research finds; Comms writes.
 
 ### `--draft` flag — chain into comms
 
@@ -93,7 +93,7 @@ If invoked as `/roundup --draft`:
 1. Check whether comms is installed: look for `<config-root>/plugins/comms.user-context.md` (comms configured) or otherwise detect the `comms` plugin/command set is available in this environment.
 2. **If comms is available** — after writing the staged file, invoke comms's `/post` command directly, passing the staged file path as its input, instead of the confirmation message above. Let `/post` take over the rest of the interaction (draft, iterate, ship).
 3. **If comms is not installed/available** — write the staged file as normal, then tell the user:
-   > "Staged [N] candidates to `<config-root>/staged/roundup/[date].md`. Drafting isn't available — the Comms Desk plugin isn't installed. Install it and run `/post` to draft this roundup in your voice."
+   > "Staged [N] candidates to `<config-root>/staged/roundup/[date].md`. Drafting isn't available — the Comms plugin isn't installed. Install it and run `/post` to draft this roundup in your voice."
    Do not fail or error; `/roundup --draft` degrades to the same behavior as plain `/roundup` when comms is absent.
 
 ---

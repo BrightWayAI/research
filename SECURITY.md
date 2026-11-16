@@ -2,7 +2,7 @@
 
 ## What this plugin does with your data
 
-Research (formerly News Curator) scans newsletters and the open web to find and stage a weekly roundup's candidates. Read-only against the public web; writes a staged candidate file, not a finished post. Drafting the post is comms (Comms Desk)'s job.
+Research (formerly News Curator) scans newsletters and the open web to find and stage a weekly roundup's candidates. Read-only against the public web; writes a staged candidate file, not a finished post. Drafting the post is comms (Comms)'s job.
 
 **Reads:**
 - **Web** (`WebSearch` + web fetch) — preferred newsletter sites (per your `/setup-news` configuration), the open web for additional coverage.
