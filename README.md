@@ -2,7 +2,7 @@
 
 _Renamed from `news-curator` to `research` (display name: Research) as part of the 2026-09-15 Nucleus plugin rename._
 
-Finds and curates a weekly news roundup's candidates — built originally for AI roundups on LinkedIn, but the topic and audience are configurable, so it works for any vertical (climate, infra, security, your industry). Research finds; drafting is [Comms](https://github.com/BrightWayAI/voice)'s job.
+Finds and curates a weekly news roundup's candidates — built originally for AI roundups on LinkedIn, but the topic and audience are configurable, so it works for any vertical (climate, infra, security, your industry). Research finds; drafting is [Comms](https://github.com/BrightWayAI/comms)'s job.
 
 One subagent handles the scan:
 
@@ -17,8 +17,8 @@ Recommended: install via the [BrightWayAI marketplace](https://github.com/Bright
 Or directly:
 
 ```
-/plugin marketplace add BrightWayAI/news-curator
-/plugin install research@news-curator
+/plugin marketplace add BrightWayAI/nucleus
+/plugin install research@nucleus
 ```
 
 ## First-time setup
@@ -58,7 +58,7 @@ references/
 
 - `WebSearch` — required for scanning the open web.
 - A web-fetch tool (built-in) — for reading source articles.
-- That's it. Optional: [Comms](https://github.com/BrightWayAI/voice) installed, for drafting the staged candidates into a post (`/post`, or `/roundup --draft`).
+- That's it. Optional: [Comms](https://github.com/BrightWayAI/comms) installed, for drafting the staged candidates into a post (`/post`, or `/roundup --draft`).
 
 <!-- OPENAI-SUPPORT:START -->
 ## ChatGPT and Codex
