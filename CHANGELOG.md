@@ -4,6 +4,11 @@ All notable changes to news-curator are documented here.
 
 Format follows [Keep a Changelog](https://keepachangelog.com/). Versions match `plugin.json`.
 
+## [0.5.6] — README refresh (2026-11-17)
+
+### Changed
+- README: install instructions and links point at the current repositories. Documentation only; no behavior change.
+
 ## [0.5.5] — Plain plugin names (2026-11-16)
 
 ### Changed

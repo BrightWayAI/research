@@ -1,6 +1,6 @@
 {
   "name": "research",
-  "version": "0.5.5",
+  "version": "0.5.6",
   "description": "Find recent stories, rank them for a configured audience, and stage candidates with traceable sources for drafting elsewhere.",
   "author": {
     "name": "BrightWay AI",
